@@ -1,0 +1,54 @@
+TO RESTART AND RUN YOUR PROJECT FROM SCRATCH:
+
+STEP 1: START THE BACKEND SERVER
+In Terminal 1 (Command Prompt):
+
+bash
+# 1. Navigate to your project folder
+cd C:\Users\pvemu\Documents\ai_learning_path_generator
+
+# 2. Activate the virtual environment
+venv\Scripts\activate.bat
+
+# 3. Start the FastAPI server
+uvicorn main:app --reload --host 127.0.0.1 --port 8000
+Keep Terminal 1 running - this is your server.
+
+STEP 2: OPEN THE FRONTEND
+In Terminal 2 (New Command Prompt):
+
+bash
+# 1. Navigate to your project folder
+cd C:\Users\pvemu\Documents\ai_learning_path_generator
+
+# 2. Open the HTML file in browser
+start index.html
+Or manually open in browser: file:///C:/Users/pvemu/Documents/ai_learning_path_generator/index.html
+
+STEP 3: TEST THE APPLICATION
+Backend should show in Terminal 1:
+
+text
+INFO:     Uvicorn running on http://127.0.0.1:8000
+Frontend should open in browser
+
+Test with:
+
+Goal: "Learn Python"
+
+Level: "Beginner"
+
+Time: "10 hours per week"
+
+Click "Generate My Project-Based Roadmap"
+
+IF YOU NEED TO START COMPLETELY FRESH:
+bash
+# Delete everything and restart
+cd C:\Users\pvemu\Documents
+rmdir /s /q ai_learning_path_generator
+mkdir ai_learning_path_generator
+cd ai_learning_path_generator
+
+# Then copy the new main.py and index.html files I provided
+# Then follow steps 1-3 above
